@@ -1,0 +1,1 @@
+/usr/bin/g++ -g CMakeFiles/proc.dir/src/main.cpp.o -o proc 

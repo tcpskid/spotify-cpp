@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/mrx/project/proc/build",
+  "command": "/usr/bin/g++  -I/home/mrx/project/proc/headers -g -std=gnu++17 -o CMakeFiles/proc.dir/src/main.cpp.o -c /home/mrx/project/proc/src/main.cpp",
+  "file": "/home/mrx/project/proc/src/main.cpp"
+}
+]

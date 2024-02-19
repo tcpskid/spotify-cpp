@@ -1,5 +1,8 @@
-project(proc VERSION 1.0 PROJECT_DESCRIPTION "idk but something")
+# Minimum CMake version required, we'll just use the latest version.
+cmake_minimum_required(VERSION 3.22)
 
+# Project name, version, and description
+project(proc VERSION 1.0 DESCRIPTION "idk something low-level")
 include_directories(${CMAKE_SOURCE_DIR}/headers)
 
 # Add the directory containing custom CMake modules to the module path
