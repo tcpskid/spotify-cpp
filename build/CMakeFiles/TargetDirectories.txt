@@ -1,3 +1,0 @@
-/home/mrx/project/proc/build/CMakeFiles/proc.dir
-/home/mrx/project/proc/build/CMakeFiles/edit_cache.dir
-/home/mrx/project/proc/build/CMakeFiles/rebuild_cache.dir
