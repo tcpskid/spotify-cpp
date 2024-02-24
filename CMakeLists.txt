@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.22)
 
-project(proc VERSION 1.0 DESCRIPTION "idk something low-level")
+project(gen VERSION 1.0 DESCRIPTION "idk something spotify thing")
 
 include_directories(${CMAKE_SOURCE_DIR}/headers)
 

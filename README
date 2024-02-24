@@ -1,0 +1,13 @@
+this is just another spotify g3n
+
+Sooooo big thanks too @Terminal1337 he had this code in py all i did was used my cpp skills to convert code nothing more than that
+
+- to compile the code
+
+    Make a dir build
+
+    `cd build` then,
+    `cmake --build .` and then ./gen
+
+- Need help?
+    connect me on discord `@tcpskid`
