@@ -1,28 +1,26 @@
-# Minimum CMake version required, we'll just use the latest version.
 cmake_minimum_required(VERSION 3.22)
 
-# Project name, version, and description
 project(proc VERSION 1.0 DESCRIPTION "idk something low-level")
 
-# Include dirs
 include_directories(${CMAKE_SOURCE_DIR}/headers)
 
-# Add the directory containing custom CMake modules to the module path
 list(APPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/cmake)
 
-# Find libcurl
-# find_package(CURL REQUIRED)
+find_package(Boost REQUIRED COMPONENTS system thread)
+find_package(OpenSSL REQUIRED)
 
+include_directories(${Boost_INCLUDE_DIRS})
 
-# Create an executable
 add_executable(${PROJECT_NAME}
     src/main.cpp
 )
 
-# # Link libcurl to your executable
-# target_link_libraries(${PROJECT_NAME} CURL::libcurl)
+target_link_libraries(${PROJECT_NAME} 
+    ${Boost_LIBRARIES} 
+    OpenSSL::SSL 
+    OpenSSL::Crypto
+)
 
-# Set C++ version
 set_target_properties(${PROJECT_NAME} PROPERTIES
     CXX_STANDARD 17
     CXX_STANDARD_REQUIRED ON
